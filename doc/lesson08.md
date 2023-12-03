@@ -35,8 +35,7 @@ JPA, у него нет ограничений по методам `equals / has
 время и дату начала и конца диапазона, для которого будет найдена еда. Это можно сделать с помощью аннотации `@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)`.
 Spring автоматически конвертирует параметры запроса в объекты типа `LocalDateTime`.
 
-В `MealRestControllerTest` нужно обратить внимание на тесты
-для методов `get` и `getBetween` контроллера, так как они возвращают список `MealTo`, а не `Meal`.  
+В `MealRestControllerTest` нужно обратить внимание на тесты для методов `getAll` и `getBetween` контроллера, так как они возвращают список `MealTo`, а не `Meal`.  
 Поэтому для сравнения списков еды создадим отдельный `TO_MATCHER` с помощью статического фабричного метода `usingEqualsComparator(MealTo.class)`:
 ```
 public static MatcherFactory.Matcher<MealTo> TO_MATCHER = MatcherFactory.usingEqualsComparator(MealTo.class)

@@ -382,6 +382,7 @@ JSON.
 
 > - Сделал "честную" аутентификацию для `RootControllerTest` (через `TestUtil#userAuth`)
 > - Сделал `mockAuthorize` для `SpringMain`, в который не попадают фильтры
+> - Отключил тесты _Meals_ - нужно будет починить в HW9
 
 - [Spring Security Testing](https://docs.spring.io/spring-security/reference/servlet/test/index.html)
 - [Setting Up MockMvc and Spring Security](https://docs.spring.io/spring-security/reference/servlet/test/mockmvc/setup.html)

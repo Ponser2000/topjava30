@@ -450,6 +450,11 @@ Spring MVC предоставляет возможность стандартн�
     - <a href="https://ru.wikipedia.org/wiki/Правило_ограничения_домена">Правило ограничения домена (SOP)</a>
     - <a href="https://ru.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross-origin resource sharing (CORS)</a>
 
+#### Apply 10_16_fix.patch
+Fix: удалил `@Disabled` с починенных тестов на `Meals`.
+
+---------------------------
+
 ## ![question](https://cloud.githubusercontent.com/assets/13649199/13672858/9cd58692-e6e7-11e5-905d-c295d2a456f1.png) Ваши вопросы
 
 > В чем отличие между аннотоацией `@PreAuthorize("hasRole('ADMIN')")` и конфигурацией в jsp: `<sec:authorize access="isAuthenticated()">`, `<sec:authorize access="hasRole('ADMIN')">` ?
